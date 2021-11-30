@@ -1,5 +1,5 @@
 # IoT-SmartAgriculture
-Internet of Things Lab Project
+_Internet of Things Lab Project_
 
 ## About this project
 

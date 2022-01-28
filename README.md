@@ -7,6 +7,6 @@ This project _aims at creating an IoT unit_, capable of collecting information r
 
 ## Hardware Prerequisites
 
-- RaspberryPi
+- Raspberry Pi
 - Humidity Sensor
 - Temperature Sensor

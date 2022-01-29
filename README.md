@@ -1,3 +1,4 @@
+ifdef::env-github[]
 # IoT-SmartAgriculture
 _Internet of Things Lab Project_
 
@@ -20,7 +21,7 @@ Process
 * Using the SSH protocol connected to the pi and installed Docker
 * Docker is working.
 +
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image1.png[alt="Image1",width=200,height=200]
+image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image1.png[alt="Image1",width=600,height=350]
 * Using the Serial USB Cable we connected Pi with the Arduino
 * We run lsusb on Pi:
 
@@ -29,9 +30,8 @@ lsusb
 ------------
 
 * And it's connected to the Arduino
-- 
 +
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image2.png[alt="Image2",width=200,height=200]
+image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image2.png[alt="Image2",width=700,height=150]
 
 
 * Running dmesg | grep "tty" on Pi
@@ -42,7 +42,7 @@ dmesg | grep "tty"
 * To figure out where is the Arduino attached to:
 * Arduino is atatched to ttytUSB0
 +
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image3.png[alt="Image3",width=200,height=200]
+image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image3.png[alt="Image3",width=700,height=150]
 
 * We run the following command to add user Pi to the dialout group
 ---------------------------
@@ -83,10 +83,13 @@ mkdir libraries
 -------
 nano sensors.ino
 -------
+
 * and we create the file to be uploaded on Arduino
-https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image4.png[alt="Image4",width=200,height=200]
+image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image4.png[alt="Image4",width=400,height=200]
+
 
 * In order to monitor the arduino data in real time we run:
 ------------
 sudo apt install screen
 ------------
+endif::[]

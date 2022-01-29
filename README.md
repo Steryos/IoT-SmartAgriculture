@@ -19,13 +19,15 @@ This project _aims at creating an IoT unit_, capable of collecting information r
 * Using the SSH protocol we connected to pi and installed Docker
 - Docker is working.
 
-<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image1.png" alt="Image1" width=600 height=350>
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image1.png" alt="Image1" width=750 height=350>
+
 * Using the Serial USB Cable we connected Pi with the Arduino
+
 ```
 lsusb 
 ```
 - And it's connected to the Arduino
-<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image2.png" alt="Image2" width=700 height=150>
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image2.png" alt="Image2" width=700 height=100>
 
 ```
 dmesg | grep "tty"
@@ -70,7 +72,7 @@ mkdir libraries
 ```
 nano sensors.ino
 ```
-<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/image4.png" alt="Image43" width=700 height=150>
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/image4.png" alt="Image43" width=400 height=150>
 
 
 * In order to monitor the arduino data in real time we run 

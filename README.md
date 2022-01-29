@@ -18,42 +18,62 @@ This project _aims at creating an IoT unit_, capable of collecting information r
 * We set up a headless Raspberry pi 3 model B v1.2 with the raspberry pi OS Lite
 * Using the SSH protocol we connected to pi and installed Docker
 - Docker is working.
-+
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image1.png[alt="Image1",width=600,height=350]
+
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image1.png" alt="Image1" width=600 height=350>
 * Using the Serial USB Cable we connected Pi with the Arduino
-* `lsusb` on Pi
-
+```
+lsusb 
+```
 - And it's connected to the Arduino
-+
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image2.png[alt="Image2",width=700,height=150]
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image2.png" alt="Image2" width=700 height=150>
 
-
-* `dmesg | grep "tty"` on Pi to figure out where is the Arduino attached to:
+```
+dmesg | grep "tty"
+```
+- on Pi to figure out where is the Arduino attached to:
 - Arduino is attached to ttytUSB0
-+
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Image3.png[alt="Image3",width=700,height=150]
 
-* `sudo usermod -aG dialout pi` to add user Pi to the dialout group
-* `sudo chmod 777 /dev/USB0` To give Pi rights for USB0, where it is connected to as mentioned previously
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/Image3.png" alt="Image3" width=700 height=150>
+
+
+* to add user Pi to the dialout group
+```
+sudo usermod -aG dialout pi
+```
+* To give Pi rights for USB0, where it is connected to as mentioned previously
+
+```
+sudo chmod 777 /dev/USB0
+``` 
+* In order to install the arduino package on pi:
  
-* `sudo apt install arduino-mk` In order to install the arduino package on pi:
+```
+sudo apt install arduino-mk
+``` 
 
-* `python3 -m pip install pyserial` to use python in the serial communication between Pi and Arduino so we run:
+
+* To use python in the serial communication between Pi and Arduino so we run: 
+```
+python3 -m pip install pyserial
+``` 
 
 
 * We then create a dir named _sketchbook_ at -> */home/pi*
 
-* Inside _sketchbook_
+```
+cd sketchbook
+nano Makefile
+mkdir libraries
+```
 
-- `nano Makefile`
-
-- `mkdir libraries`
-
-* Then we run the following command `nano sensors.ino`
-- and we create the file to be uploaded on Arduino
-
-+
-image:https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/image4.png[alt="image4",width=700,height=150]
+* Then we run the following to create the file to be uploaded on Arduino
+```
+nano sensors.ino
+```
+<img src="https://raw.githubusercontent.com/Steryos/IoT-SmartAgriculture/main/Images/image4.png" alt="Image43" width=700 height=150>
 
 
-* In order to monitor the arduino data in real time we run `sudo apt install screen`
+* In order to monitor the arduino data in real time we run 
+```
+sudo apt install screen
+```

@@ -12,6 +12,7 @@ This project _aims at creating an IoT unit_, capable of collecting information r
 - Breadboard
 - Serial USB type A to USB type B
 - Humidity / Temperature Sensor (DHT11)
+- Soil Moisture Sensor
 - Wires (10cm & 20cm)
 
 ## Process

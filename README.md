@@ -7,7 +7,7 @@ This project _aims at creating an IoT unit_, capable of collecting information r
 
 ## Hardware Prerequisites
 
-- Raspberry Pi               asinartisies
+- Raspberry Pi
 - Arduino UNO
 - Breadboard
 - Serial USB type A to USB type B
